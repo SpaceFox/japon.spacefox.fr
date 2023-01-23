@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Un renard au Japon – {#insert title}Default Title{/}</title>
+    <meta name="description" content="Photos de voyage d'un renard au Japon">
+    <meta name="author" content="SpaceFox">
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    <base href="http://japon.kisai.info/"/>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/lightbox-2.6.min.js"></script>
+    <script src="js/jquery.tablesorter.min.js"></script>
+    <link href="css/global.css" rel="stylesheet"/>
+    <link href="css/lightbox.css" rel="stylesheet"/>
+    <link href="js/themes/blue/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+    <h1>Un renard au Japon</h1>
+    <h2>Votre renard préféré au Japon. Un âne au nom comme un jeu de mots vaseux squatte...</h2>
+</header>
+
+<aside>
+    <nav>
+        <p><a href="accueil">Accueil</a></p>
+        <h1>Catégories</h1>
+        <ul>
+            {#for category in categories}
+            <li><a href="category/{category.name}">{category.displayName}</a></li>
+            {/for}
+        </ul>
+        <h1>Lieux</h1>
+        <ul>
+            {#for place in places}
+            <li><a href="place/{place.name}">{place.displayName}</a></li>
+            {/for}
+        </ul>
+    </nav>
+    <div>
+        <h1>Informations de copyright</h1>
+        <p>Toutes les images sont sous licence <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/"
+                                                  title="Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported Licence"><img
+                        src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png"
+                        alt="Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported Licence"></a></p>
+        <p>Merci de me contacter pour toute autre utilisation.</p>
+    </div>
+</aside>
+<div id="content">
+    {#insert}No body!{/insert}
+</div>
+</body>
+</html>

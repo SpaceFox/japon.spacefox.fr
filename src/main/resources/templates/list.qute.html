@@ -1,0 +1,30 @@
+{#include base}
+    {#title}{title}{/title}
+    <h1>{title}</h1>
+    <table id="menuTable" class="tablesorter">
+    <thead>
+    <tr>
+        <th>Page</th>
+        <th>Date</th>
+        <th>Lieu</th>
+        <th>Catégorie</th>
+    </tr>
+    </thead>
+    <tbody>
+    {#for page in pages}
+        <tr>
+        <td><a href="page/{page.name}"><strong>{page.title}</strong></a></td>
+        <td><span class="hidden">{page.timestamp}</span>{page.dateHuman}</td>
+        <td><a href="place/{page.place.name}">{page.place.displayName}</a></td>
+        <td><a href="category/{page.category.name}">{page.category.displayName}</a></td>
+        </tr>
+    {/for}
+    </tbody>
+    </table>
+
+    <script type="text/javascript">
+        $(function () {
+            $("#menuTable").tablesorter();
+        });
+    </script>
+{/include}
