@@ -2,17 +2,15 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
+    <meta name="language" content="fr">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Un renard au Japon – {#insert title}Default Title{/}</title>
     <meta name="description" content="Photos de voyage d'un renard au Japon">
     <meta name="author" content="SpaceFox">
     <link rel="icon" type="image/png" href="favicon.png"/>
-    <base href="http://japon.kisai.info/"/>
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/lightbox-2.6.min.js"></script>
-    <script src="js/jquery.tablesorter.min.js"></script>
-    <link href="css/global.css" rel="stylesheet"/>
-    <link href="css/lightbox.css" rel="stylesheet"/>
-    <link href="js/themes/blue/style.css" rel="stylesheet"/>
+    <base href="http://localhost:8080/"/>
+    <link href="/css/normalize.css" rel="stylesheet"/>
+    <link href="/css/main.css" rel="stylesheet"/>
 </head>
 <body>
 <header>
@@ -20,33 +18,50 @@
     <h2>Votre renard préféré au Japon. Un âne au nom comme un jeu de mots vaseux squatte...</h2>
 </header>
 
-<aside>
-    <nav>
-        <p><a href="accueil">Accueil</a></p>
+<nav>
+    <section class="categories">
         <h1>Catégories</h1>
         <ul>
             {#for category in categories}
-            <li><a href="category/{category.name}">{category.displayName}</a></li>
+                <li><a href="category/{category.name}#content">{category.displayName}</a> ({category.imgCount()})</li>
             {/for}
         </ul>
+    </section>
+    <section class="places">
         <h1>Lieux</h1>
         <ul>
             {#for place in places}
-            <li><a href="place/{place.name}">{place.displayName}</a></li>
+                <li><a href="place/{place.name}#content">{place.displayName}</a> ({place.imgCount()})</li>
             {/for}
         </ul>
-    </nav>
-    <div>
-        <h1>Informations de copyright</h1>
-        <p>Toutes les images sont sous licence <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/"
-                                                  title="Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported Licence"><img
-                        src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png"
-                        alt="Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported Licence"></a></p>
-        <p>Merci de me contacter pour toute autre utilisation.</p>
-    </div>
-</aside>
-<div id="content">
+    </section>
+</nav>
+
+<main id="content">
     {#insert}No body!{/insert}
-</div>
+</main>
+<footer>
+    <section>
+        <h1>Mentions légales</h1>
+        <p>Les mentions légales <a href="/mentionslegales/#content">sont disponibles ici</a>.</p>
+        <p>Le site et son contenu sont intégralement et librement réutilisables, y compris pour des projets
+            commerciaux <a href="/licences/#content">selon les conditions listées ici</a>.</p>
+    </section>
+    <section>
+        <h1>Contenu</h1>
+        <p><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+                <img src="/images/cc-by.png" alt="Logo CC BY 4.0">
+            </a>
+            Toutes les images et textes du site sont mis à disposition par SpaceFox selon les termes de la <a
+                    rel="license" href="http://creativecommons.org/licenses/by/4.0/">Licence Creative Commons
+                Attribution 4.0 International</a>.</p>
+    </section>
+    <section>
+        <h1>Technique</h1>
+        <p>Le code source du site est mis à disposition par SpaceFox selon les termes de <a
+                    href="https://opensource.org/licenses/MIT">la licence MIT</a>. Le code source est disponible <a
+                    href="https://github.com/SpaceFox/japon.spacefox.fr">sur Github</a>.</p>
+    </section>
+</footer>
 </body>
 </html>

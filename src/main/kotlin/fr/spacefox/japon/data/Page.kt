@@ -1855,9 +1855,12 @@ enum class Page(
     ),
     ;
 
-    private val formatter = DateTimeFormatter.ofPattern("EEEE dd MMMM yyyy")
+    fun dateHuman(): String = humanFormatter.format(date)
 
-    fun dateHuman(): String = formatter.format(date)
+    fun timestamp(): String = machineFormatter.format(date)
 
-    fun timestamp(): Long = date.toEpochDay()
+    fun imgCount(): Int = content.count { it is Image }
 }
+
+private val machineFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd")
+private val humanFormatter = DateTimeFormatter.ofPattern("EEEE dd MMMM yyyy")

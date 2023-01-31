@@ -1,7 +1,10 @@
 {#include base}
     {#title}{page.title}{/title}
-    <h1>{page.title}</h1>
-    <h2>Le {page.dateHuman} à <a href="place/{page.place.name}">{page.place.displayName}</a></h2>
+    <header>
+        <h1>{page.title}</h1>
+        <h2 class="date">Le {page.dateHuman}</h2>
+        <h2 class="place">à <a href="place/{page.place.name}#content">{page.place.displayName}</a></h2>
+    </header>
     {#for element in page.content}
         {element.render().raw}
     {/for}

@@ -12,4 +12,6 @@ enum class Category(val displayName: String) {
     francisla("Francis-La");
 
     fun pages(): List<Page> = Page.values().filter { it.category == this }
+
+    fun imgCount(): Int = pages().sumOf { it.imgCount() }
 }

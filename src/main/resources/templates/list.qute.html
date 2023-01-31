@@ -1,30 +1,17 @@
 {#include base}
     {#title}{title}{/title}
-    <h1>{title}</h1>
-    <table id="menuTable" class="tablesorter">
-    <thead>
-    <tr>
-        <th>Page</th>
-        <th>Date</th>
-        <th>Lieu</th>
-        <th>Catégorie</th>
-    </tr>
-    </thead>
-    <tbody>
+    <header>
+        <h1>{title}</h1>
+    </header>
     {#for page in pages}
-        <tr>
-        <td><a href="page/{page.name}"><strong>{page.title}</strong></a></td>
-        <td><span class="hidden">{page.timestamp}</span>{page.dateHuman}</td>
-        <td><a href="place/{page.place.name}">{page.place.displayName}</a></td>
-        <td><a href="category/{page.category.name}">{page.category.displayName}</a></td>
-        </tr>
+        <article>
+        <a class="title" href="page/{page.name}#content">{page.title}</a>
+        <div class="imgCount">{page.imgCount} images</div>
+        <div class="date">le
+            <time datetime="{page.timestamp}">{page.dateHuman}</time>
+        </div>
+        <div class="place">à <a href="place/{page.place.name}#content">{page.place.displayName}</a></div>
+        <a  class="category" href="category/{page.category.name}#content">{page.category.displayName}</a>
+        </article>
     {/for}
-    </tbody>
-    </table>
-
-    <script type="text/javascript">
-        $(function () {
-            $("#menuTable").tablesorter();
-        });
-    </script>
 {/include}

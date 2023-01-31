@@ -11,16 +11,14 @@ import javax.ws.rs.PathParam
 import javax.ws.rs.Produces
 import javax.ws.rs.core.MediaType
 
-
 @Path("/")
 class ListHtmlResource(val list: Template) {
 
     @GET
     @Path("accueil")
     @Produces(MediaType.TEXT_HTML)
-    fun accueil(): TemplateInstance = list.data("title", "Accueil")
-        .data("pages", Page.values())
-        .withMenuData()
+    fun accueil(): TemplateInstance =
+        list.data("title", "Accueil").data("pages", Page.values()).withMenuData()
 
     @GET
     @Path("category/{name}")
@@ -28,7 +26,7 @@ class ListHtmlResource(val list: Template) {
     fun category(@PathParam("name") name: String): TemplateInstance {
         val category = Category.valueOf(name)
         return list
-            .data("title", "Catégorie :${category.displayName}")
+            .data("title", category.displayName)
             .data("pages", category.pages())
             .withMenuData()
     }
@@ -43,13 +41,12 @@ class ListWithMapHtmlResource(val listWithMap: Template) {
     fun category(@PathParam("name") name: String): TemplateInstance {
         val place = Place.valueOf(name)
         return listWithMap
-            .data("title", "Lieu :${place.displayName}")
+            .data("title", place.displayName)
             .data("place", place)
             .data("pages", place.pages())
             .withMenuData()
     }
 }
-
 
 @Path("/page/")
 class PageResource(val detail: Template) {
@@ -57,11 +54,28 @@ class PageResource(val detail: Template) {
     @GET
     @Path("{name}")
     @Produces(MediaType.TEXT_HTML)
-    fun page(@PathParam("name") name: String): TemplateInstance = detail.data("page", Page.valueOf(name))
-        .withMenuData()
+    fun page(@PathParam("name") name: String): TemplateInstance =
+        detail.data("page", Page.valueOf(name)).withMenuData()
+}
+
+@Path("/mentionslegales/")
+class LegalResource(val mentionslegales: Template) {
+
+    @GET
+    @Path("/")
+    @Produces(MediaType.TEXT_HTML)
+    fun page(): TemplateInstance = mentionslegales.instance().withMenuData()
+}
+
+@Path("/licences/")
+class LicencesResource(val licences: Template) {
+
+    @GET
+    @Path("/")
+    @Produces(MediaType.TEXT_HTML)
+    fun page(): TemplateInstance = licences.instance().withMenuData()
 }
 
 private fun TemplateInstance.withMenuData(): TemplateInstance {
-    return this.data("categories", Category.values())
-        .data("places", Place.values())
+    return this.data("categories", Category.values()).data("places", Place.values())
 }

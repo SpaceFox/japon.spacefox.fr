@@ -54,7 +54,10 @@ enum class Place(val displayName: String, val iframeSrc: String, val link: Strin
         iframeSrc =
             "https://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=tokyo&amp;aq=&amp;sll=48.680792,2.502588&amp;sspn=3.315151,8.453979&amp;ie=UTF8&amp;hq=&amp;hnear=Tokyo,+Japon&amp;t=p&amp;ll=35.817813,139.658203&amp;spn=7.124687,16.45752&amp;z=6&amp;output=embed",
         link =
-            "https://maps.google.fr/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=tokyo&amp;aq=&amp;sll=48.680792,2.502588&amp;sspn=3.315151,8.453979&amp;ie=UTF8&amp;hq=&amp;hnear=Tokyo,+Japon&amp;t=p&amp;ll=35.817813,139.658203&amp;spn=7.124687,16.45752&amp;z=6"),;
+            "https://maps.google.fr/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=tokyo&amp;aq=&amp;sll=48.680792,2.502588&amp;sspn=3.315151,8.453979&amp;ie=UTF8&amp;hq=&amp;hnear=Tokyo,+Japon&amp;t=p&amp;ll=35.817813,139.658203&amp;spn=7.124687,16.45752&amp;z=6"),
+    ;
 
     fun pages(): List<Page> = Page.values().filter { it.place == this }
+
+    fun imgCount(): Int = pages().sumOf { it.imgCount() }
 }
