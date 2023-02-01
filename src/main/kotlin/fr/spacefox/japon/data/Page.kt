@@ -3,6 +3,7 @@ package fr.spacefox.japon.data
 import java.time.LocalDate
 import java.time.Month
 import java.time.format.DateTimeFormatter
+import java.util.*
 
 enum class Page(
     val category: Category,
@@ -205,7 +206,7 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """Depuis les <a href="page/wtfmatsumoto#content">bancs "pour admirer la vue"</a> sur le pont"""),
+                    """Depuis les <a href="page/wtfmatsumoto#content">bancs « pour admirer la vue »</a> sur le pont"""),
                 Image("quotidien", "Matsumoto 039", ""),
                 Image("quotidien", "Matsumoto 040", ""),
                 Text(
@@ -1862,5 +1863,5 @@ enum class Page(
     fun imgCount(): Int = content.count { it is Image }
 }
 
-private val machineFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd")
-private val humanFormatter = DateTimeFormatter.ofPattern("EEEE dd MMMM yyyy")
+private val machineFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd", Locale.FRANCE)
+private val humanFormatter = DateTimeFormatter.ofPattern("EEEE dd MMMM yyyy", Locale.FRANCE)

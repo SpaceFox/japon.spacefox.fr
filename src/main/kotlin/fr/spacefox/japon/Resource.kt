@@ -14,6 +14,12 @@ import javax.ws.rs.core.MediaType
 @Path("/")
 class ListHtmlResource(val list: Template) {
 
+
+    @GET
+    @Path("")
+    @Produces(MediaType.TEXT_HTML)
+    fun root(): TemplateInstance = accueil()
+
     @GET
     @Path("accueil")
     @Produces(MediaType.TEXT_HTML)
