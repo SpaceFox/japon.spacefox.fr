@@ -4,18 +4,19 @@
     <meta charset="utf-8">
     <meta name="language" content="fr">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Un renard au Japon – {#insert title}Default Title{/}</title>
+    <title>Un renard au Japon – {#insert title}{/}</title>
     <meta name="description" content="Photos de voyage d'un renard au Japon">
     <meta name="author" content="SpaceFox">
     <link rel="icon" type="image/png" href="/favicon.png"/>
-    <base href="https://japon.spacefox.fr/"/>
     <link href="/css/normalize.css" rel="stylesheet"/>
     <link href="/css/main.css" rel="stylesheet"/>
 </head>
 <body>
 <header>
-    <h1>Un renard au Japon</h1>
-    <h2>Votre renard préféré au Japon. Un âne au nom comme un jeu de mots vaseux squatte...</h2>
+    <a href="/">
+        <h1><span>🦊 </span>Un renard au Japon<span> 🇯🇵</span></h1>
+        <h2>Votre renard préféré au Japon. Un âne au nom comme un jeu de mots vaseux squatte...</h2>
+    </a>
 </header>
 
 <nav>
@@ -23,7 +24,7 @@
         <h1>Catégories</h1>
         <ul>
             {#for category in categories}
-                <li><a href="category/{category.name}#content">{category.displayName}</a> ({category.imgCount()})</li>
+                <li><a href="/category/{category.name}#content">{category.displayName}</a> ({category.imgCount()})</li>
             {/for}
         </ul>
     </section>
@@ -31,7 +32,7 @@
         <h1>Lieux</h1>
         <ul>
             {#for place in places}
-                <li><a href="place/{place.name}#content">{place.displayName}</a> ({place.imgCount()})</li>
+                <li><a href="/place/{place.name}#content">{place.displayName}</a> ({place.imgCount()})</li>
             {/for}
         </ul>
     </section>

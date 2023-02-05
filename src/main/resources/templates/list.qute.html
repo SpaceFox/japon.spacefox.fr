@@ -5,13 +5,11 @@
     </header>
     {#for page in pages}
         <article>
-        <a class="title" href="page/{page.name}#content">{page.title}</a>
+        <a class="title" href="/page/{page.name}#content">{page.title}</a>
         <div class="imgCount">{page.imgCount} images</div>
-        <div class="date">le
-            <time datetime="{page.timestamp}">{page.dateHuman}</time>
-        </div>
-        <div class="place">à <a href="place/{page.place.name}#content">{page.place.displayName}</a></div>
-        <a  class="category" href="category/{page.category.name}#content">{page.category.displayName}</a>
+        <div class="date"><time datetime="{page.timestamp}">{page.dateHuman}</time></div>
+        <div class="place"><a href="/place/{page.place.name}#content">{page.place.displayName}</a></div>
+        <a  class="category" href="/category/{page.category.name}#content">{page.category.displayName}</a>
         </article>
     {/for}
 {/include}

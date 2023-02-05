@@ -110,6 +110,10 @@ article {
 }
 
 /* Other behaviours */
+header h1 span {
+    display: none;
+}
+
 nav li {
     /* large line height in nav to simplify navigation */
     line-height: 2rem;
@@ -133,33 +137,45 @@ main article a.title {
     grid-row: 1;
 }
 
-main header h2.date,
-main article .date {
+main header h2.date {
     grid-column: 1;
     grid-row: 2;
-    text-align: left;
+    text-align: start;
     font-size: 0.8rem;
 }
 
-main header h2.place,
-main article .place {
+main header h2.place {
     grid-column: 2;
     grid-row: 2;
-    text-align: right;
+    text-align: end;
+    font-size: 0.8rem;
+}
+
+main article .place {
+    grid-column: 1;
+    grid-row: 2;
+    text-align: start;
+    font-size: 0.8rem;
+}
+
+main article .date {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: end;
     font-size: 0.8rem;
 }
 
 main article a.category {
     grid-column: 1;
     grid-row: 3;
-    text-align: left;
+    text-align: start;
     font-size: 0.8rem;
 }
 
 main article .imgCount {
     grid-column: 2;
     grid-row: 3;
-    text-align: right;
+    text-align: end;
     font-size: 0.8rem;
 }
 
@@ -224,7 +240,7 @@ figure {
 p,
 ul,
 ol {
-    text-align: left;
+    text-align: start;
 }
 
 section h1,
@@ -245,10 +261,10 @@ main header,
 main article,
 main > section,
 footer {
-    box-shadow: 0.25em 0.25em 0.25em rgba(0, 0, 0, 0.25);
+    box-shadow: 0.25em 0.25em 0.25em rgba(50, 50, 50, 0.25);
     margin-bottom: 1rem;
     padding: 1rem;
-    background-color: white;
+    background-color: #fcfcfc;
     max-width: calc(100vw - 2rem);
 }
 
@@ -266,7 +282,28 @@ main figcaption,
 main > p,
 main article,
 main > section {
-    background-color: lightgray;
+    background-color: #ddd;
+}
+
+a {
+    color: darkred;
+    text-decoration: none;
+}
+
+a:focus, a:hover {
+    text-decoration: solid underline darkred 0.1rem;
+}
+
+a:visited {
+    color: #500;
+}
+
+body > header > a,
+body > header > a:hover,
+body > header > a:focus,
+body > header > a:visited {
+    color: #222;
+    text-decoration: none;
 }
 
 /* Boxes behaviour (additional rules after structure for technical reasons) */
@@ -292,8 +329,28 @@ main a[href^="https://"]::after {
 /* ---------- Width-dependent design elements ---------- */
 /* Base = smartphone = all the design above */
 
+@media screen and (min-width: 27rem) {
+    /* Not-so-narrow smartphones don’t require to shrink some texts */
+    main header h2.place,
+    main header h2.date,
+    main article .place,
+    main article .date,
+    main article a.category,
+    main article .imgCount {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 29rem) {
+    /* Add emojis in header */
+    header h1 span {
+        display: inline;
+    }
+}
+
 /* Wide screen (desktop) */
 @media screen and (min-width: 42rem) {
+    /* 2-columns menu */
     nav {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -312,6 +369,10 @@ main a[href^="https://"]::after {
 }
 
 @media screen and (min-width: 48rem) {
+    body > header h1 {
+        font-size: 3rem;
+    }
+
     main article {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -323,34 +384,34 @@ main a[href^="https://"]::after {
     main article a.title {
         grid-column: 1 / 3;
         grid-row: 1;
-        text-align: left;
+        text-align: start;
     }
 
     main article div.imgCount {
         grid-column: 3;
         grid-row: 1;
-        text-align: right;
+        text-align: end;
         font-size: 1rem;
     }
 
     main article div.date {
         grid-column: 1;
         grid-row: 2;
-        text-align: right;
+        text-align: start;
         font-size: 1rem;
     }
 
     main article div.place {
         grid-column: 2;
         grid-row: 2;
-        text-align: left;
+        text-align: center;
         font-size: 1rem;
     }
 
     main article a.category {
         grid-column: 3;
         grid-row: 2;
-        text-align: right;
+        text-align: end;
         font-size: 1rem;
     }
 }
@@ -360,17 +421,14 @@ main a[href^="https://"]::after {
         max-width: 64rem;
     }
 
-    body > header h1 {
-        font-size: 3rem;
+    main article a.title {
+        font-size: 1.5rem;
     }
 
+    /* Images page header with better style for wide-screen */
     main header h1 {
         padding-left: 0.5rem;
         font-size: 2rem;
-    }
-
-    main article a.title {
-        font-size: 1.5rem;
     }
 
     main header {
@@ -383,11 +441,11 @@ main a[href^="https://"]::after {
     main header h1 {
         grid-column: 1;
         grid-row: 1 / 3;
-        text-align: left;
+        text-align: start;
     }
 
     main header h2 {
-        text-align: right;
+        text-align: end;
         line-height: 1rem;
     }
 
@@ -395,7 +453,7 @@ main a[href^="https://"]::after {
         grid-column: 2;
         grid-row: 1;
         font-size: 1rem;
-        text-align: right;
+        text-align: end;
     }
 
     main header h2.place {
@@ -404,6 +462,7 @@ main a[href^="https://"]::after {
         font-size: 1rem;
     }
 
+    /* 3-column footer */
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
