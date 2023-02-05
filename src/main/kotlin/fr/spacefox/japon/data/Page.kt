@@ -159,7 +159,7 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """Voilà un beau château noir (ce qui lui vaut son surnom de « corbeau ) planté au milieu des montagnes - à tel point qu’on se demande si le seigneur local n’a pas dit <em>« Quelle belle vue ! Construisez-moi un château ici que je puisse en profiter ! »<em>.</p><p>Plus de détails <a href="https://fr.wikipedia.org/wiki/Matsumoto-j%C5%8D">sur Wikipédia</a>."""),
+                    """Voilà un beau château noir (ce qui lui vaut son surnom de « corbeau ) planté au milieu des montagnes - à tel point qu’on se demande si le seigneur local n’a pas dit <em>« Quelle belle vue ! Construisez-moi un château ici que je puisse en profiter ! »</em>.</p><p>Plus de détails <a href="https://fr.wikipedia.org/wiki/Matsumoto-j%C5%8D">sur Wikipédia</a>."""),
                 Image("chateaux", "Matsumoto 074", "Le donjon vu des jardins"),
                 Image("chateaux", "Matsumoto 084", ""),
                 Image("chateaux", "Matsumoto 079", "On approche de l’enceinte intérieure"),
@@ -252,7 +252,9 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """<Soit les jeux pour gamins japonais sont des outils de torture sadiques qui doivent provoquer des morts, soit c’était un camp d’entraînement ninja.</p><p>Étant donné qu’on a vu personne, c’était un camp d’entraînement ninja, puisque par définition on ne voit pas les ninjas. Quoique prétende la série de petits panneaux « 3 à 12 ans », mais doit-on croire quelqu’un qui a <a href="page/wtfmatsumoto#content">une montagne sur la tête</a> ?"""),
+                    "Soit les jeux pour gamins japonais sont des outils de torture sadiques qui doivent provoquer des morts, soit c’était un camp d’entraînement ninja."),
+                Text(
+                    """Étant donné qu’on a vu personne, c’était un camp d’entraînement ninja, puisque par définition on ne voit pas les ninjas. Quoique prétende la série de petits panneaux « 3 à 12 ans », mais doit-on croire quelqu’un qui a <a href="page/wtfmatsumoto#content">une montagne sur la tête</a> ?"""),
                 Image("wtf", "Matsumoto 053", """Déjà on y accède par un "escalier""""),
                 Image("wtf", "Matsumoto 054", "L’échelle horizontale, mais d’un accès… spécial ?"),
                 Image("wtf", "Matsumoto 055", "J’ai moyennement confiance en ce pont…"),
@@ -311,7 +313,7 @@ enum class Page(
                 Text(
                     "Oui, c’est un blob avec une paire de fleurs de cerisiers dans les cheveux et avec un donjon sur la tête.</p><p>On pouvait l’acheter en peluche, mais hélas beaucoup trop cher."),
                 Text(
-                    "<strong>L’apocalypse selon les Japonais :</strong></p><p>Dans l’hôtel à Himeji, des bouquins. Parmi les bouquins, un Nouveau Testament, en japonais et en anglais (à côté d’un bouquin de méditations bouddhistes). Comme dans tout Nouveau Testament, on trouve l’Apocalypse, fort à propos placée page 666."),
+                    "<strong>L’apocalypse selon les Japonais :</strong><br/>Dans l’hôtel à Himeji, des bouquins. Parmi les bouquins, un Nouveau Testament, en japonais et en anglais (à côté d’un bouquin de méditations bouddhistes). Comme dans tout Nouveau Testament, on trouve l’Apocalypse, fort à propos placée page 666."),
                 Image("wtf", "Beppu1 132", ""),
             ),
     ),
@@ -355,9 +357,9 @@ enum class Page(
                 Image(
                     "quotidien",
                     "Himeji 107",
-                    "Une tablette dans un Shinkansen. Une idée (parmi tant d’autres) à transmettre à la SNCF pour leurs TGV"),
+                    "Notez le petit essuie-glace de la caméra, le projecteur et le haut-parleur permettant de communiquer avec le quidam malintentionné pris sur le fait"),
                 Text(
-                    "Notez le petit essuie-glace de la caméra, le projecteur et le haut-parleur permettant de communiquer avec le quidam malintentionné pris sur le fait.</p><p>D’une manière générale, le Japon est un pays sûr, mais très vidéo-surveillé."),
+                    "D’une manière générale, le Japon est un pays sûr, mais très vidéo-surveillé."),
             ),
     ),
     vuehimeji(
@@ -370,7 +372,7 @@ enum class Page(
                 Image(
                     "quotidien",
                     "Himeji 106",
-                    "Une tablette dans un Shinkansen. Une idée (parmi tant d’autres) à transmettre à la SNCF pour leurs TGV"),
+                    "Vue générale sur Himeji depuis le château."),
             ),
     ),
     kansai(
