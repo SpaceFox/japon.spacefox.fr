@@ -268,6 +268,11 @@ footer {
     max-width: calc(100vw - 2rem);
 }
 
+/* Image border must be pure white */
+figure img {
+    background-color: white;
+}
+
 /* Boxes colors */
 html {
     background-color: #808080;
