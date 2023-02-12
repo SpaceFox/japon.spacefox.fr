@@ -1,6 +1,4 @@
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Oleo+Script&family=Kiwi+Maru&family=Zen+Old+Mincho&family=Noto+Serif+JP&display=swap');
-
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -187,6 +185,43 @@ footer {
 }
 
 /* ---------- Fonts ---------- */
+/* noto-serif-jp-regular - latin_japanese */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Noto Serif JP';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/noto-serif-jp-v21-latin_japanese-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('/fonts/noto-serif-jp-v21-latin_japanese-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* noto-serif-jp-700 - latin_japanese */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Noto Serif JP';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/noto-serif-jp-v21-latin_japanese-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('/fonts/noto-serif-jp-v21-latin_japanese-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* oleo-script-regular - latin-ext_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Oleo Script';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/oleo-script-v14-latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('/fonts/oleo-script-v14-latin-ext_latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* oleo-script-700 - latin-ext_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Oleo Script';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/oleo-script-v14-latin-ext_latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('/fonts/oleo-script-v14-latin-ext_latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 /* Families */
 body {
     font-family: 'Noto Serif JP', serif;
