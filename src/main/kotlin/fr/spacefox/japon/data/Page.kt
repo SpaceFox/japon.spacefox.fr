@@ -119,7 +119,7 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """A <a href="page/zenkoji#content">Zenkô-ji</a>, outre le temple, on trouve divers mémoriaux, parfois surprenants…"""),
+                    """A <a href="/page/zenkoji#content">Zenkô-ji</a>, outre le temple, on trouve divers mémoriaux, parfois surprenants…"""),
                 Image("wtf", "WTF 33", "Mémorial pour les pins et leurs aiguilles"),
                 Text(
                     "<em>Ce monument a été construit en 1956 pour honorer l’esprit des pins et de leurs aiguilles. Chaque 8 avril se tient un rituel annuel pour qu’ils reposent en paix.</em>"),
@@ -206,14 +206,14 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """Depuis les <a href="page/wtfmatsumoto#content">bancs « pour admirer la vue »</a> sur le pont"""),
+                    """Depuis les <a href="/page/wtfmatsumoto#content">bancs « pour admirer la vue »</a> sur le pont"""),
                 Image("quotidien", "Matsumoto 039", ""),
                 Image("quotidien", "Matsumoto 040", ""),
                 Text(
-                    """Si on recule un peu lorsqu’on est dans le <a href="page/sanctuairesmatsumoto#content">sanctuaire du centre-ville</a>"""),
+                    """Si on recule un peu lorsqu’on est dans le <a href="/page/sanctuairesmatsumoto#content">sanctuaire du centre-ville</a>"""),
                 Image("quotidien", "Matsumoto 041", ""),
                 Text(
-                    """Depuis le 7ème étage du <a href="page/matsumotojo#content">château</a> (il y a bien 7 étages, il y en a un caché)"""),
+                    """Depuis le 7ème étage du <a href="/page/matsumotojo#content">château</a> (il y a bien 7 étages, il y en a un caché)"""),
                 Image("quotidien", "Matsumoto 069", ""),
                 Image(
                     "quotidien",
@@ -231,7 +231,7 @@ enum class Page(
             arrayOf(
                 Image("wtf", "Matsumoto 048", "On a trouvé Charlie !"),
                 Text(
-                    """Comme l’indique le petit logo, ces bancs sont là pour <a href="page/vuesmatsumoto#content">admirer les montagnes</a>"""),
+                    """Comme l’indique le petit logo, ces bancs sont là pour <a href="/page/vuesmatsumoto#content">admirer les montagnes</a>"""),
                 Image("wtf", "Matsumoto 047", ""),
                 Image(
                     "wtf",
@@ -254,7 +254,7 @@ enum class Page(
                 Text(
                     "Soit les jeux pour gamins japonais sont des outils de torture sadiques qui doivent provoquer des morts, soit c’était un camp d’entraînement ninja."),
                 Text(
-                    """Étant donné qu’on a vu personne, c’était un camp d’entraînement ninja, puisque par définition on ne voit pas les ninjas. Quoique prétende la série de petits panneaux « 3 à 12 ans », mais doit-on croire quelqu’un qui a <a href="page/wtfmatsumoto#content">une montagne sur la tête</a> ?"""),
+                    """Étant donné qu’on a vu personne, c’était un camp d’entraînement ninja, puisque par définition on ne voit pas les ninjas. Quoique prétende la série de petits panneaux « 3 à 12 ans », mais doit-on croire quelqu’un qui a <a href="/page/wtfmatsumoto#content">une montagne sur la tête</a> ?"""),
                 Image("wtf", "Matsumoto 053", """Déjà on y accède par un "escalier""""),
                 Image("wtf", "Matsumoto 054", "L’échelle horizontale, mais d’un accès… spécial ?"),
                 Image("wtf", "Matsumoto 055", "J’ai moyennement confiance en ce pont…"),
@@ -431,7 +431,7 @@ enum class Page(
                     "Une fois qu’on est arrivés au bout d’un mur… ben y’en a un autre. Ce truc est un labyrinthe, pour pouvoir tirer sur les ennemis le plus longtemps possible."),
                 Image("chateaux", "Himeji 095", ""),
                 Text(
-                    """<a href="page/matsumotojo#content">Comme à Matsumoto</a>, il y a des shachihokos protecteurs anti-incendie. Ici les trois dernières générations qui datent des trois dernières réfections du toit. En cadeau, un jeu des différences !"""),
+                    """<a href="/page/matsumotojo#content">Comme à Matsumoto</a>, il y a des shachihokos protecteurs anti-incendie. Ici les trois dernières générations qui datent des trois dernières réfections du toit. En cadeau, un jeu des différences !"""),
                 Image("chateaux", "Himeji 091", ""),
                 Image("chateaux", "Himeji 092", ""),
                 Image("chateaux", "Himeji 093", ""),
@@ -520,7 +520,7 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """Tiens, ne serait-ce pas <a href="https://fr.wikipedia.org/wiki/Torii">un torii</a> là au bord de cet <a href="page/enfersbeppu#content">Enfer de Beppu</a> ?"""),
+                    """Tiens, ne serait-ce pas <a href="https://fr.wikipedia.org/wiki/Torii">un torii</a> là au bord de cet <a href="/page/enfersbeppu#content">Enfer de Beppu</a> ?"""),
                 Image("shinto", "Beppu1 126", ""),
                 Image("shinto", "Beppu1 119", "Allons voir ! On commence par le torii principal"),
                 Image("shinto", "Beppu1 120", "Le bassin et les louches pour se purifier"),
@@ -548,7 +548,7 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """Au détour du jardin d’un <a href="page/enfersbeppu#content">Enfer de Beppu</a>, un <a href="https://fr.wikipedia.org/wiki/Tanuki">tanuki</a> à taille humaine."""),
+                    """Au détour du jardin d’un <a href="/page/enfersbeppu#content">Enfer de Beppu</a>, un <a href="https://fr.wikipedia.org/wiki/Tanuki">tanuki</a> à taille humaine."""),
                 Image("shinto", "Beppu1 127", ""),
                 Text("Oui, ce sont bien ses couilles…"),
             ),
@@ -560,7 +560,7 @@ enum class Page(
         title = "La nature à Beppu",
         content =
             arrayOf(
-                Text("""En bordure d’un <a href="page/enfersbeppu#content">enfer</a>"""),
+                Text("""En bordure d’un <a href="/page/enfersbeppu#content">enfer</a>"""),
                 Image("nature", "Beppu1 155", ""),
                 Image("nature", "Beppu1 137", ""),
                 Image("nature", "Beppu1 144", "Les collines alentours"),
@@ -582,7 +582,7 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """Les <a href="page/enfersbeppu#content">Enfers de Beppu</a> se trouvent en fait dans la partie haute de la ville, dans laquelle on trouve aussi un grand nombre d’<a href="https://fr.wikipedia.org/wiki/Onsen">onsens</a> de toutes sortes : du plus simple - parfois une simple mare volcanique en plein air vaguement aménagée jusqu’au complexe luxueux qui atteint la dizaine de bains. La plupart restent simples et très peu chers.</p<p>Évidemment, il est complètement impossible de prendre la moindre photo de ces bains - l’extérieur n’a aucun intérêt, et l’intérieur ne se photographie pas, pour les raisons l’on imagine.</p><p>Par contre, ils sont tous très agréables (surtout ceux en plein air, mais attention aux coups de soleil !)."""),
+                    """Les <a href="/page/enfersbeppu#content">Enfers de Beppu</a> se trouvent en fait dans la partie haute de la ville, dans laquelle on trouve aussi un grand nombre d’<a href="https://fr.wikipedia.org/wiki/Onsen">onsens</a> de toutes sortes : du plus simple - parfois une simple mare volcanique en plein air vaguement aménagée jusqu’au complexe luxueux qui atteint la dizaine de bains. La plupart restent simples et très peu chers.</p<p>Évidemment, il est complètement impossible de prendre la moindre photo de ces bains - l’extérieur n’a aucun intérêt, et l’intérieur ne se photographie pas, pour les raisons l’on imagine.</p><p>Par contre, ils sont tous très agréables (surtout ceux en plein air, mais attention aux coups de soleil !)."""),
                 Image(
                     "quotidien",
                     "Beppu2 163",
@@ -659,7 +659,7 @@ enum class Page(
                     "Beppu2 174",
                     "En parlant de bus, voici le bouton pour demander au conducteur de s’arrêter"),
                 Text(
-                    """Les japonais aiment bien avoir un personnage rigolo pour représenter leur ville (par exemple, <a href="page/wtfmatsumoto#content">Matsumoto</a> ou <a href="page/wtfhimejo#content">Himeji</a>). Sauf qu’à Beppu, quelqu’un a cru intelligent d’essayer de placer <strong>tous</strong> les symboles de la ville.</p><p>On obtient donc un chat qui roule à vélo avec un sac à dos, qui a un nez en forme de symbole « onsen », avec une bassine pour se laver sur la tête, laquelle contient une serviette et un thermomètre en forme de tour de Beppu ; et qui aime toutes les spécialités locales."""),
+                    """Les japonais aiment bien avoir un personnage rigolo pour représenter leur ville (par exemple, <a href="/page/wtfmatsumoto#content">Matsumoto</a> ou <a href="/page/wtfhimejo#content">Himeji</a>). Sauf qu’à Beppu, quelqu’un a cru intelligent d’essayer de placer <strong>tous</strong> les symboles de la ville.</p><p>On obtient donc un chat qui roule à vélo avec un sac à dos, qui a un nez en forme de symbole « onsen », avec une bassine pour se laver sur la tête, laquelle contient une serviette et un thermomètre en forme de tour de Beppu ; et qui aime toutes les spécialités locales."""),
                 Image("wtf", "Beppu2 177", ""),
                 Image("wtf", "Beppu2 173", "Le design, jusque dans les codes barre."),
             ),
@@ -772,7 +772,7 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """On nous avait conseillé, compte tenu des circonstances et ce ce qu’il y avait d’ouvert, d’aller faire un tour à Mitaki. Mitaki, c’est une ville de la banlieue de Hiroshima (10 minutes en train) où l’on trouve <a href="page/templesmitaki#content">un complexe de temples</a>, et une montagne avec un point de vue sur Hiroshima. Nous y sommes donc allés."""),
+                    """On nous avait conseillé, compte tenu des circonstances et ce ce qu’il y avait d’ouvert, d’aller faire un tour à Mitaki. Mitaki, c’est une ville de la banlieue de Hiroshima (10 minutes en train) où l’on trouve <a href="/page/templesmitaki#content">un complexe de temples</a>, et une montagne avec un point de vue sur Hiroshima. Nous y sommes donc allés."""),
                 Image(
                     "quotidien",
                     "Hiroshima2 213",
@@ -840,10 +840,10 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """<a href="http://fr.wikipedia.org/wiki/Itsukushima">Itsukushima</a>, plus connue sous le nom de Miyajima, est une île-sanctuaire Shintô. On y trouve en particulier le très célèbre <a href="page/sanctuairemiyajima#content">Itsukushima-jinja</a> (sanctuaire d’Itsukushima), qui est l’une des vues les plus célèbres du Japon."""),
+                    """<a href="https//fr.wikipedia.org/wiki/Itsukushima">Itsukushima</a>, plus connue sous le nom de Miyajima, est une île-sanctuaire Shintô. On y trouve en particulier le très célèbre <a href="/page/sanctuairemiyajima#content">Itsukushima-jinja</a> (sanctuaire d’Itsukushima), qui est l’une des vues les plus célèbres du Japon."""),
                 Image("quotidien", "Miyajima 261", "Vu sur la ville"),
                 Text(
-                    """L’île est célèbre pour ses cervidés semi-sauvages. Enfin, « sauvages » parce qu’ils ne sont pas réellemnt apprivoisés, mais vivent librement. Ce qui ne les empêchent pas de traîner en ville et de quémander de la nourriture au touristes (ce qui pose quelques problèmes).</p><p>Contrairement à ce qu’on peut lire ou croire, ce ne sont pas des daims mais des <a href="http://fr.wikipedia.org/wiki/Cerf_Sika">cerfs Sika</a> (le cousin japonais)."""),
+                    """L’île est célèbre pour ses cervidés semi-sauvages. Enfin, « sauvages » parce qu’ils ne sont pas réellemnt apprivoisés, mais vivent librement. Ce qui ne les empêchent pas de traîner en ville et de quémander de la nourriture au touristes (ce qui pose quelques problèmes).</p><p>Contrairement à ce qu’on peut lire ou croire, ce ne sont pas des daims mais des <a href="https//fr.wikipedia.org/wiki/Cerf_Sika">cerfs Sika</a> (le cousin japonais)."""),
                 Image("quotidien", "Miyajima 259", "*Rumine*"),
                 Image("quotidien", "Miyajima 260", "Je VEUX cette feuille !"),
                 Image("quotidien", "Miyajima 262", ""),
@@ -859,7 +859,7 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """Est-il vraiment nécessaire de présenter le <a href="http://fr.wikipedia.org/wiki/Sanctuaire_d’Itsukushima">Itsukushima-jinja</a> (sanctuaire d’Itsukushima), étant donné qu’il s’agit de l’une des trois vues les plus célèbres du Japon ?"""),
+                    """Est-il vraiment nécessaire de présenter le <a href="https//fr.wikipedia.org/wiki/Sanctuaire_d’Itsukushima">Itsukushima-jinja</a> (sanctuaire d’Itsukushima), étant donné qu’il s’agit de l’une des trois vues les plus célèbres du Japon ?"""),
                 Image(
                     "shinto",
                     "Miyajima 234",
@@ -938,7 +938,7 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """Dans les jardins du <a href="page/sanctuairemiyajima#content">Itsukushima-jinja</a>."""),
+                    """Dans les jardins du <a href="/page/sanctuairemiyajima#content">Itsukushima-jinja</a>."""),
                 Image("jardins", "Miyajima 297", "Bizarrement ce pont est connu."),
                 Image(
                     "jardins",
@@ -1046,7 +1046,7 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """Le <a href="https://fr.wikipedia.org/wiki/Higashi_Hongan-ji">Higashi Hongan-ji (東本願寺)</a>, ou « temple oriental du vœu originel », est l’un des deux temples dominants de la secte bouddhiste Jôdo shinshū au Japon et à l’étranger. Ce serait la plus grande construction en bois au monde (mais le <a href="page/todaiji#content">Tôdai-ji</a> revendique aussi ce titre).</p><p>Malheureusement, il était en rénovation, à l’exception du <a href="https://fr.wikipedia.org/wiki/Honden">honden</a>."""),
+                    """Le <a href="https://fr.wikipedia.org/wiki/Higashi_Hongan-ji">Higashi Hongan-ji (東本願寺)</a>, ou « temple oriental du vœu originel », est l’un des deux temples dominants de la secte bouddhiste Jôdo shinshū au Japon et à l’étranger. Ce serait la plus grande construction en bois au monde (mais le <a href="/page/todaiji#content">Tôdai-ji</a> revendique aussi ce titre).</p><p>Malheureusement, il était en rénovation, à l’exception du <a href="https://fr.wikipedia.org/wiki/Honden">honden</a>."""),
                 Image(
                     "temples",
                     "Kyoto1 323",
@@ -1067,7 +1067,7 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """La <a href="http://fr.wikipedia.org/wiki/Gare_de_Kyoto">gare de Kyôto</a> est un OVNI assez surprenant."""),
+                    """La <a href="https//fr.wikipedia.org/wiki/Gare_de_Kyoto">gare de Kyôto</a> est un OVNI assez surprenant."""),
                 Image("quotidien", "Kyoto1 312", "Vue sur le hall principal."),
                 Image(
                     "quotidien",
@@ -1135,12 +1135,12 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """Les différents sites historiques de Nara sont entourés par un immense parc, le parc des cerfs, et prolongés par la forêt primaire de Kasugayama.</p><p>Contrairement à <a href="page/itsukushimaville#content">leurs cousins de Miyajima</a>, les <a href="http://fr.wikipedia.org/wiki/Cerf_Sika">cerfs Sika</a> de Nara sont apprivoisés depuis plus de mille ans."""),
+                    """Les différents sites historiques de Nara sont entourés par un immense parc, le parc des cerfs, et prolongés par la forêt primaire de Kasugayama.</p><p>Contrairement à <a href="/page/itsukushimaville#content">leurs cousins de Miyajima</a>, les <a href="https//fr.wikipedia.org/wiki/Cerf_Sika">cerfs Sika</a> de Nara sont apprivoisés depuis plus de mille ans."""),
                 Image("jardins", "Nara 364", "Conséquence : ces cerfs sont tout sauf farouches."),
                 Image("jardins", "Nara 365", "… non, impossible de parler d’une bête sauvage."),
                 Image("jardins", "Nara 357", "La rue pittoresque de Nara"),
                 Text(
-                    """Un bâtiment dont j’ai oublié la fonction, entre le temple et le <a href="page/kasugataisha#content">Kasuga-taisha</a>."""),
+                    """Un bâtiment dont j’ai oublié la fonction, entre le temple et le <a href="/page/kasugataisha#content">Kasuga-taisha</a>."""),
                 Image("jardins", "Nara 358", ""),
                 Image("jardins", "Nara 359", "Un palier ? Pour quoi faire ?"),
                 Image("jardins", "Nara 360", ""),
@@ -1159,7 +1159,7 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """Le <a href="https://fr.wikipedia.org/wiki/Kasuga-taisha">Kasuga-taisha (春日大社)</a> est un santuraire shintô de Nara. Il est situé dans le <a href="page/parcdescerfs#content">parc des cerfs</a> et est célèbre pour ses milliers de lanternes."""),
+                    """Le <a href="https://fr.wikipedia.org/wiki/Kasuga-taisha">Kasuga-taisha (春日大社)</a> est un santuraire shintô de Nara. Il est situé dans le <a href="/page/parcdescerfs#content">parc des cerfs</a> et est célèbre pour ses milliers de lanternes."""),
                 Image("shinto", "Nara 343", "L’arrivée au sanctuaire."),
                 Image(
                     "shinto",
@@ -1201,7 +1201,7 @@ enum class Page(
                     "Nara 367",
                     "Vendredi, outre les touristes on trouve beaucoup de scolaires."),
                 Text(
-                    """Le bâtiment principal, le <a href="https://fr.wikipedia.org/wiki/Daibutsu-den">Daibutsu-den (大仏殿)</a>, se dispute avec le <a href="page/higashihonganji#content">Higashi Hongan-ji</a> pour le titre de <em>« plus grande construction en bois du monde »</em>."""),
+                    """Le bâtiment principal, le <a href="https://fr.wikipedia.org/wiki/Daibutsu-den">Daibutsu-den (大仏殿)</a>, se dispute avec le <a href="/page/higashihonganji#content">Higashi Hongan-ji</a> pour le titre de <em>« plus grande construction en bois du monde »</em>."""),
                 Image("temples", "Nara 368", ""),
                 Image("temples", "Nara 369", ""),
                 Image("temples", "Nara 370", "La cour"),
@@ -1296,7 +1296,7 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """Le <a href="http://fr.wikipedia.org/wiki/Nijô-jô">Nijô-jô (二条城)</a> est un ancien palais impérial de Kyôto. Il est connu entre autres pour son parquet rossignol : toutes les lattes grincent volontairement à peine on y touche, et produisent des sons différents.</p><p>Malheureusement on ne peut pas photographier l’intérieur. Par contre, on peut en visiter <a href="page/nijojojardins#content">les jardins</a>."""),
+                    """Le <a href="https//fr.wikipedia.org/wiki/Nijô-jô">Nijô-jô (二条城)</a> est un ancien palais impérial de Kyôto. Il est connu entre autres pour son parquet rossignol : toutes les lattes grincent volontairement à peine on y touche, et produisent des sons différents.</p><p>Malheureusement on ne peut pas photographier l’intérieur. Par contre, on peut en visiter <a href="/page/nijojojardins#content">les jardins</a>."""),
                 Image("chateaux", "Kyoto2 448", "L’extérieur, côté cour."),
                 Image("chateaux", "Kyoto2 449", "L’extérieur, côté jardin"),
                 Image("chateaux", "Kyoto2 447", "Un détail"),
@@ -1311,7 +1311,7 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """Tout simplement les jardins du <a href="page/nijojo#content">Nijô-jô</a>."""),
+                    """Tout simplement les jardins du <a href="/page/nijojo#content">Nijô-jô</a>."""),
                 Image(
                     "jardins",
                     "Kyoto2 405",
@@ -1331,7 +1331,7 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """Le <a href="http://fr.wikipedia.org/wiki/Kinkaku-ji">Kinkaku-ji (金閣寺)</a>, ce qui signifie <em>"Temple du pavillon d’or"</em>, est l’un des temples les plus connues de Kyôto, et donc l’une des attractions les plus touristiques."""),
+                    """Le <a href="https//fr.wikipedia.org/wiki/Kinkaku-ji">Kinkaku-ji (金閣寺)</a>, ce qui signifie <em>"Temple du pavillon d’or"</em>, est l’un des temples les plus connues de Kyôto, et donc l’une des attractions les plus touristiques."""),
                 Image(
                     "temples",
                     "Kyoto2 417",
@@ -1351,7 +1351,7 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """Le <a href="http://fr.wikipedia.org/wiki/Ryôan-ji">Ryôan-ji (竜安寺 / 龍安寺)</a> est un monastère Zen de Kyôto."""),
+                    """Le <a href="https//fr.wikipedia.org/wiki/Ryôan-ji">Ryôan-ji (竜安寺 / 龍安寺)</a> est un monastère Zen de Kyôto."""),
                 Image("temples", "Kyoto2 421", "Une porte du monastère"),
                 Image("jardins", "Kyoto2 409", "Vue du jardin sec"),
                 Image("jardins", "Kyoto2 410", ""),
@@ -1371,7 +1371,7 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """Le <a href="http://fr.wikipedia.org/wiki/Ninna-ji">Ninna-ji (仁和寺)</a> est un temple de Kyôto. Pour une fois, on peut photographier l’intérieur ! Et bien sûr, il possède <a href="page/ninnajijardins#content">un jardin</a>."""),
+                    """Le <a href="https//fr.wikipedia.org/wiki/Ninna-ji">Ninna-ji (仁和寺)</a> est un temple de Kyôto. Pour une fois, on peut photographier l’intérieur ! Et bien sûr, il possède <a href="/page/ninnajijardins#content">un jardin</a>."""),
                 Image("temples", "Kyoto2 422", ""),
                 Image("temples", "Kyoto2 423", ""),
                 Image("temples", "Kyoto2 424", ""),
@@ -1388,7 +1388,7 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """Tout simplement les jardins du <a href="page/ninnaji#content">Ninna-ji (仁和寺)</a> ."""),
+                    """Tout simplement les jardins du <a href="/page/ninnaji#content">Ninna-ji (仁和寺)</a> ."""),
                 Image("jardins", "Kyoto2 414", ""),
                 Image("jardins", "Kyoto2 415", ""),
                 Image("temples", "Kyoto2 425", ""),
@@ -1406,7 +1406,7 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """Le complexe de <a href="http://en.wikipedia.org/wiki/Myôshin-ji">Myôshin-ji (妙心寺)</a> est un complexe de temples Rinzai Zen.</p><p>Ce fut sans doute l’une des expériences les plus bizarres du séjour : le lieu est bien indiqué sur le plan, mais une fois qu’on y arrive… plus rien. Pas une explication. Personne. Et contrairement aux autres temples de la journées, cela ne ressemble pas à un musée ou à un temple antique.</p><p>Pour commencer, le complexe est un dédale d’allées dans ce style :"""),
+                    """Le complexe de <a href="https//en.wikipedia.org/wiki/Myôshin-ji">Myôshin-ji (妙心寺)</a> est un complexe de temples Rinzai Zen.</p><p>Ce fut sans doute l’une des expériences les plus bizarres du séjour : le lieu est bien indiqué sur le plan, mais une fois qu’on y arrive… plus rien. Pas une explication. Personne. Et contrairement aux autres temples de la journées, cela ne ressemble pas à un musée ou à un temple antique.</p><p>Pour commencer, le complexe est un dédale d’allées dans ce style :"""),
                 Image("temples", "Kyoto2 432", ""),
                 Image("temples", "Kyoto2 433", ""),
                 Image("temples", "Kyoto2 434", ""),
@@ -1428,7 +1428,7 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """Le <a href="http://fr.wikipedia.org/wiki/Fushimi_Inari">Fushimi Inari taisha (伏見稲荷大社)</a> est un sanctuaire Shinto de Kyôto. Il est très connu pour ses allées de <em>torii</em> qui courent jusqu’en haut de la montagne."""),
+                    """Le <a href="https//fr.wikipedia.org/wiki/Fushimi_Inari">Fushimi Inari taisha (伏見稲荷大社)</a> est un sanctuaire Shinto de Kyôto. Il est très connu pour ses allées de <em>torii</em> qui courent jusqu’en haut de la montagne."""),
                 Image("shinto", "Kyoto3 475", ""),
                 Image("shinto", "Kyoto3 476", "L’entrée du sanctuaire"),
                 Image("shinto", "Kyoto3 495", ""),
@@ -1465,7 +1465,7 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """Le <a href="http://fr.wikipedia.org/wiki/Kiyomizu-dera">Kiyomizu-dera (清水寺)</a> est l’un des temples bouddhiques les plus connus de Kyôto."""),
+                    """Le <a href="https//fr.wikipedia.org/wiki/Kiyomizu-dera">Kiyomizu-dera (清水寺)</a> est l’un des temples bouddhiques les plus connus de Kyôto."""),
                 Image("temples", "Kyoto3 467", "Vue générale"),
                 Image("temples", "Kyoto3 466", "Vue plus rapprochée"),
                 Image("temples", "Kyoto3 462", "Ce que l’on voit depuis la plate-forme"),
@@ -1493,7 +1493,7 @@ enum class Page(
                 Image("quotidien", "Kyoto3 452", "Vue générale de Kyôto"),
                 Image("quotidien", "Kyoto3 453", ""),
                 Text(
-                    """<a href="http://fr.wikipedia.org/wiki/Gion">Gion (祇園)</a> est un ancien quartier de Kyôto, connu entre autres pour ses Geishas."""),
+                    """<a href="https//fr.wikipedia.org/wiki/Gion">Gion (祇園)</a> est un ancien quartier de Kyôto, connu entre autres pour ses Geishas."""),
                 Image("quotidien", "Kyoto3 458", ""),
                 Image("quotidien", "Kyoto3 459", ""),
                 Image("quotidien", "Kyoto3 460", ""),
@@ -1632,7 +1632,7 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """Le Sensô-ji (浅草寺) est un temple bouddhique très touristique du <a href="page/asakusa#content">quartier d’Asakusa</a>."""),
+                    """Le Sensô-ji (浅草寺) est un temple bouddhique très touristique du <a href="/page/asakusa#content">quartier d’Asakusa</a>."""),
                 Image("temples", "Tokyo 572", "L’une des lanternes géantes caractéristiques."),
                 Image(
                     "temples",
@@ -1652,7 +1652,7 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """La <a href="http://fr.wikipedia.org/wiki/Tokyo_Skytree">Tokyo Skytree (東京スカイツリー)</a> est une tour de radiodiffusion du quartier de Sumida. C’est aussi la 2ème plus haute structure au monde encore debout en 2013, juste derrière la Burj Khalifa, avec 643 mètres."""),
+                    """La <a href="https//fr.wikipedia.org/wiki/Tokyo_Skytree">Tokyo Skytree (東京スカイツリー)</a> est une tour de radiodiffusion du quartier de Sumida. C’est aussi la 2ème plus haute structure au monde encore debout en 2013, juste derrière la Burj Khalifa, avec 643 mètres."""),
                 Image("quotidien", "Tokyo 521", "La Tôkyô Skytree"),
                 Image("quotidien", "Tokyo 523", ""),
                 Image("quotidien", "Tokyo 527", ""),
@@ -1699,7 +1699,7 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """<a href="http://fr.wikipedia.org/wiki/Akihabara">Akihabara (秋葉原)</a> est un quartier très particulier de Tôkyô. Connu depuis des décennies pour ses magasins d’électronique, on y trouve aussi un nombre incalculable de magasins de jeux, de vidéos, de mangas, de gadgets en tous genre dont raffolent les <em>otakus</em>, des maid cafés et des magasins de porno / sex shops en tous genre."""),
+                    """<a href="https//fr.wikipedia.org/wiki/Akihabara">Akihabara (秋葉原)</a> est un quartier très particulier de Tôkyô. Connu depuis des décennies pour ses magasins d’électronique, on y trouve aussi un nombre incalculable de magasins de jeux, de vidéos, de mangas, de gadgets en tous genre dont raffolent les <em>otakus</em>, des maid cafés et des magasins de porno / sex shops en tous genre."""),
                 Image("quotidien", "Tokyo 533", "Façades d’immeubles"),
                 Image("quotidien", "Tokyo 535", ""),
                 Image(
@@ -1712,7 +1712,7 @@ enum class Page(
                 Image("quotidien", "Tokyo 559", "Dans la rue…"),
                 Image("quotidien", "Tokyo 507", "Dans un magasin"),
                 Text(
-                    """Curieusement, ce masque Krauser (Detroit Metal City) a été trouvé à <a href="page/asakusa#content">Asakusa</a>…"""),
+                    """Curieusement, ce masque Krauser (Detroit Metal City) a été trouvé à <a href="/page/asakusa#content">Asakusa</a>…"""),
                 Image("wtf", "Tokyo 587", ""),
                 Image(
                     "wtf",
@@ -1748,7 +1748,7 @@ enum class Page(
                     "Tokyo 545",
                     "… et un cube étrange (et des gamins, parce que ça grouille littéralement de gamins)"),
                 Text(
-                    """Boutique Ghibli (en fait celle de <a href="page/skytree#content">Sumida</a>)"""),
+                    """Boutique Ghibli (en fait celle de <a href="/page/skytree#content">Sumida</a>)"""),
                 Image("quotidien", "Tokyo 519", ""),
                 Image("quotidien", "Tokyo 520", ""),
             ),
@@ -1815,27 +1815,27 @@ enum class Page(
         content =
             arrayOf(
                 Text(
-                    """Prêt pour une bonne nuit de sommeil dans le <a href="page/ryokannagano#content">ryokan de Nagano</a>."""),
+                    """Prêt pour une bonne nuit de sommeil dans le <a href="/page/ryokannagano#content">ryokan de Nagano</a>."""),
                 Image("francisla", "Francis-la 157", ""),
                 Text(
-                    """Une Guiness à deux pas du <a href="page/matsumotojo#content">château de Matsumoto</a>."""),
+                    """Une Guiness à deux pas du <a href="/page/matsumotojo#content">château de Matsumoto</a>."""),
                 Image("francisla", "Francis-la 158", ""),
                 Text(
-                    """Dans le bus pour <a href="page/vuesmatsumoto#content">les hauteurs de Mastumoto</a>."""),
+                    """Dans le bus pour <a href="/page/vuesmatsumoto#content">les hauteurs de Mastumoto</a>."""),
                 Image("francisla", "Francis-la 159", ""),
-                Text("""L’entrée du <a href="page/himejijo#content">château de Himeji</a> !"""),
+                Text("""L’entrée du <a href="/page/himejijo#content">château de Himeji</a> !"""),
                 Image("francisla", "Francis-la 160", ""),
                 Text(
-                    """Paré pour faire un tour aux <a href="page/sourcesbeppu#content">onsens de Beppu</a> !"""),
+                    """Paré pour faire un tour aux <a href="/page/sourcesbeppu#content">onsens de Beppu</a> !"""),
                 Image("francisla", "Francis-la 161", ""),
-                Text("""Devant le <a href="page/memorialpaix#content">dôme de Genbaku</a>."""),
+                Text("""Devant le <a href="/page/memorialpaix#content">dôme de Genbaku</a>."""),
                 Image("francisla", "Francis-la 183", ""),
                 Text(
-                    """Devant le <a href="page/sanctuairemiyajima#content">torii flottant de l’Itsukushima-jinja</a>."""),
+                    """Devant le <a href="/page/sanctuairemiyajima#content">torii flottant de l’Itsukushima-jinja</a>."""),
                 Image("francisla", "Miyajima 256", ""),
                 Text("Non ?"),
                 Image("francisla", "Miyajima 257", ""),
-                Text("""Téléphérique pour le <a href="page/montmisen#content">Mont Misen</a>."""),
+                Text("""Téléphérique pour le <a href="/page/montmisen#content">Mont Misen</a>."""),
                 Image("francisla", "Miyajima 258", ""),
                 Text(
                     """De retour de <a href="place/nara#content">Nara</a>, c’est Francis-La qui conduit le train !"""),
@@ -1844,15 +1844,15 @@ enum class Page(
                     """Le vélo, moyen de transport idéal à <a href="place/kyoto#content">Kyôto</a> (et très utilisé un peu partout au Japon)."""),
                 Image("francisla", "Kyoto2 401", ""),
                 Text(
-                    """Francis-la et sa nouvelle amie 雛菊 (Hinagiku), une renarde qu’il a rencontrée au <a href="page/fushimiinari#content">Fushimi Inari taisha (伏見稲荷大社)</a>"""),
+                    """Francis-la et sa nouvelle amie 雛菊 (Hinagiku), une renarde qu’il a rencontrée au <a href="/page/fushimiinari#content">Fushimi Inari taisha (伏見稲荷大社)</a>"""),
                 Image("francisla", "Kyoto3 450", ""),
                 Text(
-                    """Francis-la et Hinagiku dans les <a href="page/jardinsimperial#content">jardins du Palais Impérial</a>."""),
+                    """Francis-la et Hinagiku dans les <a href="/page/jardinsimperial#content">jardins du Palais Impérial</a>."""),
                 Image("francisla", "Tokyo 498", ""),
-                Text("""Francis-la à <a href="page/asakusa#content">Asakusa</a>."""),
+                Text("""Francis-la à <a href="/page/asakusa#content">Asakusa</a>."""),
                 Image("francisla", "Tokyo 499", ""),
                 Image("francisla", "Tokyo 500", ""),
-                Text("""En route pour le <a href="page/museeghibli#content">musée Ghibli</a> !"""),
+                Text("""En route pour le <a href="/page/museeghibli#content">musée Ghibli</a> !"""),
                 Image("francisla", "Tokyo 501", ""),
             ),
     ),
