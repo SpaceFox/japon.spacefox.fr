@@ -23,7 +23,7 @@ dependencies {
 }
 
 group = "fr.spacefox"
-version = "1.0.0"
+version = "1.0.1"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17
