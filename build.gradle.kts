@@ -1,6 +1,6 @@
 plugins {
-    kotlin("jvm") version "1.9.10"
-    kotlin("plugin.allopen") version "1.9.10"
+    kotlin("jvm") version "1.9.23"
+    kotlin("plugin.allopen") version "1.9.23"
     id("io.quarkus")
 }
 
@@ -17,7 +17,7 @@ dependencies {
     implementation(enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}"))
     implementation("io.quarkus:quarkus-resteasy-reactive-qute")
     implementation("io.quarkus:quarkus-kotlin")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib")
     implementation("io.quarkus:quarkus-arc")
     testImplementation("io.quarkus:quarkus-junit5")
 }
@@ -26,8 +26,8 @@ group = "fr.spacefox"
 version = "1.0.3"
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
 }
 
 tasks.withType<Test> {
@@ -40,6 +40,6 @@ allOpen {
 }
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
-    kotlinOptions.jvmTarget = JavaVersion.VERSION_17.toString()
+    kotlinOptions.jvmTarget = JavaVersion.VERSION_21.toString()
     kotlinOptions.javaParameters = true
 }
