@@ -14,17 +14,13 @@ import jakarta.ws.rs.core.MediaType
 @Path("/")
 class ListHtmlResource(val list: Template) {
 
-
-    @GET
-    @Path("")
-    @Produces(MediaType.TEXT_HTML)
-    fun root(): TemplateInstance = accueil()
+    @GET @Path("") @Produces(MediaType.TEXT_HTML) fun root(): TemplateInstance = accueil()
 
     @GET
     @Path("accueil")
     @Produces(MediaType.TEXT_HTML)
     fun accueil(): TemplateInstance =
-        list.data("title", "Accueil").data("pages", Page.values()).withMenuData()
+        list.data("title", "Accueil").data("pages", Page.entries.toTypedArray()).withMenuData()
 
     @GET
     @Path("category/{name}")
@@ -83,5 +79,6 @@ class LicencesResource(val licences: Template) {
 }
 
 private fun TemplateInstance.withMenuData(): TemplateInstance {
-    return this.data("categories", Category.values()).data("places", Place.values())
+    return this.data("categories", Category.entries.toTypedArray())
+        .data("places", Place.entries.toTypedArray())
 }

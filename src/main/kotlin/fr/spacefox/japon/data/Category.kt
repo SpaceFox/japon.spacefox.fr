@@ -11,7 +11,7 @@ enum class Category(val displayName: String) {
     quotidien("Vie quotidienne"),
     francisla("Francis-La");
 
-    fun pages(): List<Page> = Page.values().filter { it.category == this }
+    fun pages(): List<Page> = Page.entries.filter { it.category == this }
 
     fun imgCount(): Int = pages().sumOf { it.imgCount() }
 }
