@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "2.0.0"
+    kotlin("jvm") version "2.0.20"
     id("io.quarkus")
 }
 
@@ -17,7 +17,7 @@ val quarkusPlatformVersion: String by project
 
 dependencies {
     implementation(enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}"))
-    implementation("io.quarkus:quarkus-resteasy-reactive-qute")
+    implementation("io.quarkus:quarkus-rest-qute")
     implementation("io.quarkus:quarkus-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
     implementation("io.quarkus:quarkus-arc")
@@ -25,7 +25,7 @@ dependencies {
 }
 
 group = "fr.spacefox"
-version = "1.0.5"
+version = "1.0.6"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_21
